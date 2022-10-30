@@ -1,0 +1,45 @@
+DOM manipulation 
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Show Time</h1>
+<button type="button"
+onclick="document.getElementById('date_time_button').innerHTML = Date()">
+Click and see Date and Time.</button>
+<p id="date_time_button"></p>
+</body>
+</html>
+
+
+Css manipulation using dom
+<html>
+<body>
+<p id="p2">Hello World!</p>
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
+</body>
+</html>
+
+
+Javascript promise program
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript SetTimeout()</h2>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<h1 id="demo"></h1>
+
+<script>
+setTimeout(function() { myFunction("Lumos Maximus"); }, 3000);
+
+function myFunction(value) {
+  document.getElementById("demo").innerHTML = value;
+}
+</script>
+
+</body>
+</html>
