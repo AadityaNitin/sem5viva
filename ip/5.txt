@@ -70,3 +70,56 @@ javascript fetch program
 	</script>
 </body>
 </html>
+
+
+async javascript
+clock program
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript setInterval()</h2>
+
+<p>Using setInterval() to display the time every second (1000 milliseconds).</p>
+
+<h1 id="demo"></h1>
+
+<script>
+setInterval(myFunction, 1000);
+
+function myFunction() {
+  let d = new Date();
+  document.getElementById("demo").innerHTML=
+  d.getHours() + ":" +
+  d.getMinutes() + ":" +
+  d.getSeconds();
+}
+</script>
+
+</body>
+</html>
+
+aync timeout program
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript async / await</h2>
+
+<p>Data will arrive in 3 sec </p>
+
+<h1 id="demo"></h1>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    setTimeout(function() {resolve("I have arrived");}, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script>
+
+</body>
+</html>
