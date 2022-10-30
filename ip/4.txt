@@ -1,0 +1,152 @@
+4a
+sign of product of three numbers
+var x = 5;
+var y = -2;
+var z = -3;
+var sign = 0;
+if(x<0){
+    sign += 1;
+}
+if(y<0){
+    sign += 1;
+}
+if(z<0){
+    sign += 1;
+}
+if(sign % 2 == 0){
+    console.log("The ans has sign +");
+}
+else{
+    console.log("The ans has sign -");
+}
+
+First 5 happy numbers
+function happy_number(num) 
+{
+    var m, n ;
+    var c = [] ;
+ 
+    while(num != 1 && c[num] !== true) 
+    {
+        c[num] = true ;
+        m = 0 ;
+        while (num > 0) {
+            n = num % 10 ;
+            m += n * n ;
+            num = (num  - n) / 10 ;
+        }
+        num = m ;
+    }
+    return (num == 1) ;
+}
+ 
+var cnt = 5;
+var num = 1;
+var f5 = ''; 
+while(cnt-- > 0) 
+{
+    while(!happy_number(num))
+        num++ ;
+f5 = f5+(num + ", ") ;
+
+    num++ ;
+}
+console.log('First 5 happy numbers are : '+f5);
+
+4b
+Inheritancce in js
+
+class Shape {
+    constructor(x,y){
+        this.setLocation(x,y);
+    }
+    setLocation(x,y){
+        this.x=x;
+        this.y=y;
+    }
+}
+class Circle extends Shape{
+    constructor(x,y,radius){
+        super(x,y);
+        this.radius=radius;
+    }
+    getArea(){
+        return Math.PI*this.radius*this.radius
+    }
+}
+
+var circle = new Circle(0,2,5);
+console.log(circle.getArea())
+
+another example of inheritance
+function Rectangle(sides, width, height) {
+    this.sides = sides;
+    this.width = width;
+    this.height = height;
+    this.area = function() {
+      return this.width * this.height;
+    }
+    this.perimeter = function() {
+      return (this.width + this.height) * 2;
+    }
+  }
+  
+  // Square constructor
+  function Square(sides, length) {
+    this.sides = sides;
+    this.width = length;
+    this.height = length;
+    this.area = function() {
+      return this.width * this.height;
+    },
+    this.perimeter = function() {
+      return (this.width + this.height) * 2;
+    }
+  }
+  
+  var rect = new Rectangle(4, 3, 5);
+  var square = new Square(4, 4);
+  
+  console.log(rect.area());
+ console.log(square.area());
+
+Generator:A generator-function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return. The yield statement suspends function’s execution and sends a value back to caller, but retains enough state to enable function to resume where it is left off. When resumed, the function continues execution immediately after the last yield run
+function * fibonacci(){
+    let current = 0;
+    let next = 1;
+    while(true){
+        const reset = yield current;
+        [current,next]=[next,next+current];
+        if(reset){
+            current=0;
+            next=1;
+        }
+    }
+}
+const sequence = fibonacci();
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+
+iterators
+const favourtieMovies = [
+    'Harry Potter',
+    'Lord of the Rings',
+    'Rush Hour', 
+    'Interstellar',
+    'Evolution',
+  ];
+  const iterator = favourtieMovies[Symbol.iterator]();
+ 
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
