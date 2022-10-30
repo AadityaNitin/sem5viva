@@ -1,0 +1,100 @@
+Router
+App.js Code:
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./Home";
+import Blogs from "./Blogs";
+import Contact from "./Contact";
+import NoPage from "./NoPage";
+
+function App() {
+  return (
+    // <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    //</div>
+  )
+}
+export default App;
+
+Layout.js code:
+
+import { Outlet, Link } from "react-router-dom";
+const Layout = () => {
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Outlet />
+    </>
+  )
+};
+export default Layout;
+
+Home.js code:
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div>
+      <h1>This is Home</h1>
+    </div>
+  )
+}
+export default Home
+
+Blogs.js code:
+import React from 'react'
+const Blogs = () => {
+  return (
+    <div>
+      <h1>This is Blogs</h1>
+    </div>
+  )
+}
+export default Blogs
+
+Contact.js code:
+import React from 'react'
+
+const Blogs = () => {
+  return (
+    <div>
+      <h1>This is Contact</h1>
+    </div>
+  )
+}
+export default Blogs
+
+NoPage.js code:
+import React from 'react'
+const NoPage = () => {
+  return (
+    <div>
+      <h1>404</h1>
+    </div>
+  )
+}
+export default NoPage
+
