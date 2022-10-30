@@ -118,3 +118,37 @@ function App() {
 export default App;
 
 
+events in React
+Football.js Code:
+
+import React from 'react'
+
+const Football = () => {
+    const shoot = () => {
+        alert("Great Shot!");
+      }
+  return (
+    <div>
+       <button onClick={shoot}>Take the shot!</button>
+    </div>
+  )
+}
+
+export default Football
+
+App.js code:
+import './App.css';
+import Football from './Football';
+
+function App() {
+  return (
+    <div className="App">
+      <Footballl />
+    </div>
+  )
+}
+
+export default App;
+
+
+
