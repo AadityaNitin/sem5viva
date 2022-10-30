@@ -1,0 +1,26 @@
+6a)props
+App.js code:
+import './App.css';
+import Welcome from './Welcome';
+
+function App() {
+  return (
+    <div className="App">
+      <Welcome name="Aaditya" />
+      <Welcome name="xyz" />
+      <Welcome name="ABC" />
+    </div>
+  )
+}
+export default App;
+
+Welcome.js code:
+import React from 'react'
+const Welcome = (props) => {
+  return (
+    <div>
+      <h1>Hello, {props.name}</h1>
+    </div>
+  )
+}
+export default Welcome;
