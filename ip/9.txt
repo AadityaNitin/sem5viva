@@ -1,0 +1,26 @@
+type node in terminal to enter in REPL
+To enter a script we have to go in editor mode
+for that type .editor
+press ctrl+D to finish that will execute your current entered script
+to load a file use .load command (.load filename.js)
+    function Calculatrice(a, b, op) {
+
+      switch (op) {
+
+        case '+':
+        return a + b
+        break;
+        case '-':
+        return a - b
+        break;
+        case '*':
+        return a * b
+        break;
+        case '/':
+        return a / b
+        break;
+        
+      }
+    }
+    console.log(Calculatrice(12, 5, '+'));
+    
