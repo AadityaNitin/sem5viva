@@ -84,3 +84,22 @@ different length for different hashdeep commands
 to put hashdeep in a file write: hashdeep file.txt>hashset.txt(file name)
 to put all hashes in a file write: hashdeep *>hashall.txt(file name)
 B.to audit write: hashdeep -a -r -k hashset.txt file.txt
+
+
+Traceroute:
+traceroute command in Linux prints the route that a packet takes to reach the host. This command is useful when you want to know about the route and about all the hops that a packet takes.
+eg: traceroute www.google.com
+
+Nikto:Nikto is an open-source web server scanner which performs comprehensive tests against web servers for multiple items. You can use Nikto with any web servers like Apache, Nginx, IHS, OHS, Litespeed, and so on. Nikto can check for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Items and plugins scanned by Nikto are frequently updated and can be automatically updated.
+Installation: sudo apt-get install nikto
+eg: nikto -h 128.199.222.244 
+
+Dmitry:Dmitry is a free and open-source tool available on GitHub. The tool is used for information gathering. You can download the tool and install in your Kali Linux. Dmitry stands for DeepMagic Information Gathering Tool. It’s a command-line tool Using Dmitry tool You can collect information about the target, this information can be used for social engineering attacks. It can be used to gather a number of valuable pieces of information
+
+Usages of Dmitry Tool :
+Dmitry Tool can be used to search subdomains of the target.
+Dmitry Tool can be used to find open ports of the target system.
+Dmitry Tool can be used to perform TCP scan.
+Dmitry Tool can be used with netcraft service to get the target information such as operating system, web server details, web host details, hosting service details, etc.
+Dmitry Tool can be used with whois service to get the target information such as registered domain, name, address, the contact information of the person who registered it.
+Dmitry Tool can be used to get email addresses that are associated with the domain of the target.
