@@ -1,0 +1,21 @@
+Playfair cipher:
+algorithm:
+1)Generate key square (5x5):
+All the alphabets present in key, should be filled in the grid rowwise & later fill the remaining grid with alphabets that does not appear I/J are clubbed
+
+2)To encrypt plain text 
+•If 2 alphabets are same, insert dummy character x between them If number of alphabets are not even add x at the end
+•Divide plaintext in group of 2 (pairs). 
+•If both alphabets are in same row of key matrix, then replace with immediate right character. same column, the replace with immediate bottom one.
+•If both are in different column & rows, replace character by char in same row but another column
+ 
+3)To decrypt Do all opppsite steps of encryption & eliminate x. 
+
+The Vigenere's Cipher:
+
+vigenere's cipher is an algorithm that is used to encrypting & decrypting text using series of  interwoven ceasar cipher This algorithm is eary to understand & implement
+
+For encryption Ci = (Pi + Ki) mod 26
+
+For decryption Pi= (Ci-Ki) mod 26 
+If Pi comes out to be negative, add 26 to it
