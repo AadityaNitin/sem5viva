@@ -1,0 +1,31 @@
+Digital signature:
+Aim:
+A Digital Signature is an authentication mechanism that enables the creator of the message to attack a code that acts as a signature. The signature is formed by taking the hash of the message and encrypting the message with the creator's private key. The signature guarantees the source and integrity of the message.
+About the experiment:
+In Public key setting,it becomes difficult to verify for a receiver whether message is originated from claimed source.
+In this experiment, we show how can a receiver verify integrity of the message in public key setting.
+Your task is to verify, whether digital signature scheme really works and why it works?
+
+Procedure:
+Step 1 : Enter the input text to be encrypted in the 'Plaintext' area and generate hash value for message by clicking on the SHA-1 button
+Step 2 : Copy content of Hash Output(hex) field and paste it in Input to RSA(hex) field.
+Step 3 : Select keysize of public key from RSA Public key section by clicking on any key button.
+Step 4 : Click on Apply RSA button to generate a digital signature.
+
+Theory:
+Encryption algorithm using Public Key Cryptosystem
+RSA algorithm:
+Input: Reciever's RSA public key (n,e), k = (n) bytes. Data of length 101 bytes.
+
+Output: Encrypted data block of length K bytes. 
+Generating Public key for RSA.
+Select two prime numbers p&q. 
+First part of the public key n = p*q ·
+Compute (Φ(n) = (p-1)*(q-1) 
+Select e such that
+G(e,Φ(n))=1
+Compute d=e-1mod((n). 
+A's public key is (e,n).
+
+Encryption: C=M^e mod n
+Decryption: M=C^d mod n
