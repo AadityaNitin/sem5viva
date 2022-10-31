@@ -1,5 +1,16 @@
 Aim: To explore hashdeep tool in kali linux for generating, matching and
 auditing hash of files.
+
+Theory:
+hashdeep is a set of tools to compute MD5, SHA1, SHA256, tiger and whirlpool hashsums of arbitrary number of files recursively.
+The main hashdeep features are:
+It can compare those hashsums with a list of known hashes;
+The tools can display those that match the list or those that does not match;
+It can display a time estimation when processing large files.
+It can do piecewise hashing (hash input files in arbitrary sized blocks).
+This package is useful in forensics investigations.
+Installation: sudo apt-get install hashdeep
+
 Lab Outcome Attainment: LO2
 1.To check the version of Hashdeep:
 hashdeep -V
@@ -65,3 +76,11 @@ hashdeep -v -a -r -k hashset1.txt /home/shachi/myfiles
 22. For verbose output of audit
 hashdeep -vv -a -r -k hashset1.txt /home/shachi/myfiles
 hashdeep -vvv -a -r -k hashset1.txt /home/shachi/myfiles
+
+
+A.first file hashing - hashdeep filename
+second file only md5 - hashdeep -c md5 filename 
+different length for different hashdeep commands
+to put hashdeep in a file write: hashdeep file.txt>hashset.txt(file name)
+to put all hashes in a file write: hashdeep *>hashall.txt(file name)
+B.to audit write: hashdeep -a -r -k hashset.txt file.txt
