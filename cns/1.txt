@@ -1,4 +1,9 @@
 Shift cipher:
+(let x=position of letter
+n=shift/key 0<=n<=25
+for encryption:(x+n)mod26
+for decryption:(x-n)mod26
+)
 Aim:A private-key encryption scheme consists of a set of all possible messages, called the message space M, and three algorithms, namely,
 (a) Gen
 (b) Enc
