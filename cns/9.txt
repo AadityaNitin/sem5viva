@@ -1,0 +1,19 @@
+Denial of Service Attack:
+A denial of service (DoS) event is a cyber attack in which hackers or 
+cybercriminals seek to make a host machine, online service or network resource 
+unavailable to its intended users.
+Different types of Denial of Service Attacks: Syn flood, Ping (ICMP) flood, UDP 
+flood, etc.
+Hping3 for performing DOS attack
+
+# hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source 192.168.1.159
+ICMP flood using hping3:
+An Internet Control Message Protocol (ICMP) flood attack, also known as a Ping 
+flood attack, is a common Denial-of-Service (DoS) attack in which an attacker 
+attempts to overwhelm a targeted device with ICMP echo-requests (pings). 
+Normally, ICMP echo-request and echo-reply messages are used to ping a 
+network device in order to diagnose the health and connectivity of the device 
+and the connection between the sender and the device. By flooding the target 
+with request packets, the network is forced to respond with an equal number of 
+reply packets. This causes the target to become inaccessible to normal traffic.
+# hping3 -1 --flood -a 192.168.103 192.168.1.255
