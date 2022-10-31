@@ -1,0 +1,51 @@
+AES:
+Theory:
+The Advanced Encryption Standard (AES) is a symmetric block cipher to protect classified info.
+AES is implemented in software & hardware throughout the world to encrypt sensitive data.
+AES is much stronger than DES & triple DES.
+The key size be 128/192/256 bits and It can encrypt data in blocks of 128 bits each.
+AES takes 128 bits as input & outputs 128 bits of encrypted cipher text. 
+AES relies on substitution permutation network principle which means it ks performed using a series of linked operations which means involves replacing & suffling of input data. 
+Working of the cipher:
+AES performs operations on bytes of data rather than in bits. Since the block size is 128 bits, the cipher processes 128 bits on the input data at a time. The number of rounds depends on key length
+128 bit key = 10 rounds.
+192 bit key = 12 rounds. 
+256 bit key = 14 rounds
+Creation of Round keys:
+A key schedule algorithm is used to calculate all the bound keys from the key. So the initial bey is used to create many different round keys which will be used in the corresponding round of the encryption.
+
+Modes in the AES encryption algorithm
+1)ECB (Electronic Code Block) ECB provides division into blocks & encrypted seperately with same key
+
+2) CBC (Cipher Block chaining) It provides by using an initialization vector (IV) IV has same size as the block that is encrypted.
+
+3)Output Feedback mode (OFB).
+It enables block encryptor to be used as a stream encryptor.
+
+4)CTR (Counter mode). Different counders are XOR & with same key
+
+Procedure:
+Step I : Choose a mode of operation from PART I
+Step II : Select KeySize, Plaintext, KeyText, Intialization vector(IV)(for ECB and OFB modes only) and CTR(forctr mode only) in PART II
+Step III : Whenever necessay use XOR opeartion in PART III in accordance with choosen mode of operation
+Step IV : Use fuction FK and "Key in hex:" field in PART IV should be filled keytext generated in Step2
+Step V : Fill "Plaintext in hex:" field with approriate value in accordance with choosen mode of operation and click on encrypt button
+Step VI : Enter your answer in PART V to check your ciphertext
+
+Steps for CBC
+steps: IV in part 5 and XOR with first elements
+put that XOR in part 4 plaintext with key 
+encrypt it and paste it in part 5 
+put that encrypted in XOR with second elements
+and repeat the process
+
+Output Feedback
+steps: paste IV in part 5 and in part 4 with key
+encrypt it 
+put encrypted in XOR with first elements 
+put the XOR in part 5 
+copy the encrypted file in plaintext of part 4
+encrypt it
+put the encrypted in XOR with 2nd elements 
+put XOR in part 5
+repeat the process
