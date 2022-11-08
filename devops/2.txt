@@ -1,0 +1,42 @@
+To understand version control system, install git and create github account
+
+Version Control System: It is also known as source control, is the practice for tracking & managing changes to software code. These are software tools that help software teams manage changes to source code over time. 
+
+Benefits:
+Using version control system software is best practice for high performing software & Devops team. It helps developer move faster & allows software teams to preserve efficiency & agility as the team scales to include more developers. Primary benefits are as follows
+
+1) Traceability: It is a mechanism that provides evidence of all evidence of all revisions & changes made over a while. It enables users to identify the development of the file through its various stages.
+
+2) Document History: It provides invaluable information. It will help developer that works on latest version as it will help to solve problems experienced in earlier versions. 
+
+3) Branching & Merging: It allows team members to work the same document concurrently but independent of each other without affecting the contribution of fellow collaborators. Branching is usually adopted in Segments within teams that contain workflows. These workflows maybe for particular feature.
+
+4) Identity: Version control enables the current team to analyze the deletion, editing & creation of datasets made since the original copy. It brings clarity to the development of the software
+
+5)Reduction of Duplicate & Errors: It reduces the duplication of multiple &/or outdated versions of any given. documents. 
+
+6) Management: It enables management to have a comprehensive perspective of development of project. 
+
+8) Open Channels of Communication: VCS leads to an open channel communication b/w colleagues & teams. It is because the ability to share code & trace previous work creates transparency & consistency.
+
+9) Efficiency: It promotes The updated an efficient progression of document. The updated versions allow developers to revert to an earlier version when they face errors.
+
+
+Types of Version Control System: 
+1)Contralised: You have a single project "central" of "Copy your on a server & commit your changes to this central copy. 
+2) Distributed: You do not rely on a central server to store all the versions of a project's files.
+
+Git:
+
+1)Git is the most commonly used version control system. 
+
+2)Git tracks the changes you make to files, so you have a record of what has been done,& you can revert to & specific versions should You ever need to.
+
+3)Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.
+
+Installing Git on Ubuntu:
+
+Open terminal & enter these 2 commands : 
+1) $ sudo apt-get update
+
+2) $ sudo apt-get install git
