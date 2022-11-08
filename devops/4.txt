@@ -1,0 +1,40 @@
+Jenkins basics and application deployment on Jenkins
+
+Theory: Jenkins offers a simple way to set up a continous integration & continous delivery environment for almost any combination of languages and source code repositories. Using pipelines, as well as automating other routine development tasks.
+
+While Jenkins doesn't eliminate the need to create scripts for indivisual steps, it does give you a faster and more robust way to integrate your entire chain of build, test, and deployment tools than you can easily. build yourself.
+
+How Jenkins work? 
+Jenkins is distributed as a WAR archieve & as installer packages for the major operating systems, as a Homebrew package, as a Docker image, and as source code. The source code is mostly Java, with a few Groovy, Ruby, and Antlr files.
+
+You can run the Jenkins WAR standalone or as a servlet in a Java application server such as Tomcat. In either case, it produces a web user interface & accepts calls to its REST API.
+
+When you run Jenkins for the first time, it creates an administrative user with which a long random password, you paste into its initial webpage to Can unlock the installation.
+
+Steps to install Jenkins on Windows
+
+1. Install Java Development Ket (JDK) Download JDK 11 & choose windows 32 bit or 64 bit according to your systern configuration. Click on "accept the license agreement"."
+
+2. Set the path for Environmental Variable for JDK. Go to System Properties. Under the "Advanced" tab, select "Environmental Variables".
+
+Select "new" Then copy the path of the JDK folder & paste it in the corresponding value field. Under system variables, set up a bin folder for JDK Go to command prompt and type following to check if Java has been successfully 
+
+3. Download & install Jenkins.
+Download Jenkins. Under LTS, click on windows. After file is downloaded, unzip it. Click on the folder & install it Select "finish" once done.
+
+4. Run Jenkins on Local Host 8080
+Once installed, Open web browser & type "localhost:8080" Enter credentials & login. If you install for the first time, the dashboard will ask you to install the recommended plugins.
+
+5. Jenkins Server Interface
+
+New item allows to create a new project. Build History shows the status of your project builds. Manage System deals with the various configurations of the system.
+
+6. Build and Run a Job on Jenkins. 
+Select a new item. Choose a freestyle project & click ok. Click on execute windows.
+
+In command box, type the following: 
+echo "Hello.. This is my first Jenkins Demo: %date%:%time%".
+
+Click apply & then save.
+
+Select build now. In console output, you can see output of first Jenkins job with time & date.
