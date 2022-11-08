@@ -1,0 +1,73 @@
+Devops principles, practices, roles, tools and Responsibilities
+
+DevOps is the combration of cultural philosophies, practices, & tools that increases an organisation's ability to deliver applications & services at high velocity evolving & improving products at a faster pace than organizations using traditional software development & infrastructural management processes.
+
+•Benefits:
+
+1) Speed: Move at high velocity so you can innovate for customers faster, adapt to changing markets better, and grow more efficient at driving business results. 
+
+2) Reliability. Ensure the quality of application updates & infrastructure changes so you can reliably deliver at a more rapid pace while maintaining a positive experience for users.
+
+3) Scale: Operate & manage your infra & development processes at scale Automation & consistency help you manage complex systems efficiently & with reduced risks. 
+
+4) Improved Collaboration: Build more effective teams under a DevOps cultural model which emphasizes values such as ownership & accountability.
+
+5) Security: More quickly while retaining control & preserving compliance Eg. Using infrastructure as code & policy. code, you can as define & then track compliance at scale.
+
+
+•Principles:
+
+1) Create a collaborative Environment:
+DevOps brings together developments & operations teams,which implies an atmosphere of collaboration.
+
+2) Automate, Automate, Automate:
+Automation can benefit operations like Continous Integration or Delivery (CI/CD), infrastructure provisioning, security compliance, verification tests, etc.
+
+3) Implement End-to-End Responsibility:
+The traditional software development model gave software developers & operations seperate roles.  
+
+4) Monitor & Foster Continous Improvement of process. 
+Devops team implement CI/CD pipeline, it monitors apps logs, infra & systems. DevOps teams release a solid product & work to continously improve the product's performance, compliance & speed.
+
+•Roles & Responsibilities :
+
+1) Understanding customer requirements & project KPI's.
+
+2) Implementing various development, testing, automation tools, & IT infrastructure. 
+
+3) Managing stakeholders & external interfaces.
+
+4) Troubleshooting techniques & fixing the code bugs. 
+
+5) Setting up tools & required infrastructure.
+
+6) Encouraging & building automated processes wherever possible.
+
+7) Identifying & deploying cybersecurity measures by continuely performing vulnerability assessment & risk management. 
+
+8) Incidence management & root cause analysis.
+
+
+•Tools used in Devops:
+
+1)Puppet: It is the most widely used DevOps tools. It allows the delivery & release of technology changes quickly & frequently,
+
+2)Ansible: Ansible is a leading DevOps tools. It is an open source, IT engine that automates application deployment, cloud provisioning, inter service orchestration & other IT tools.
+
+3)Docker: Docker is a high-end DevOps tool that allows building, ship & run distributed applications on multiple systems.
+
+4)Nagios: It can determine the error & rectify them with the help of network, infrastructure, server & log monitoring systems. It is most useful tools of DevOps.
+
+5)Chef: Chef is a useful tool for achieving scale, speed & consistency. This technology Ruby encoding to develop essential building blocks such as recipes & cookbooks.
+
+6)Jenkins: Jenkins is a DevOps tool for monitoring the execution of repeated tasks. It is a software that allows continous integration.
+
+7)Git: It is designed to handle minor to major projects with speed & efficiency. It is developed to to coordinate the work among programmers.
+
+8)Saltstack: Stackify is a lightweight DevOps tools. It shows real time error quaries, logs & more directly into workstation. Saltstack is an ideal solution for intelligent orchestration for software defined data center.
+
+9)Splunk: Splunk is a tool to make machine data usable, accessible, & valuable to everyone. It delivers operational intelligence to DevOps teams. It helps companies to be more secure, productive & competitive. 
+
+10)Selenium: Selenium is a portable software testing, framework for web applications. It provides an easy interface for developing automated tests.
+
+
