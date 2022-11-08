@@ -1,0 +1,29 @@
+Developing first docker container
+Docker is a set of platform as a service products that use OS level virtualization to deliver software packages called containers.
+
+Docker enables us to seperate the application from the infrastructure so we can deliver software quickly. With docker, we can manage our infrastructure in the same ways we manage our applications
+
+Features of Docker: 
+1)Faster & Easier Configuration.
+2)Application isolation. 
+3) Increase in productivity
+4) Swarm
+5) Services 
+6) Routing Mesh
+7)Security Management
+8) Rapid Scaling of Systems
+
+Advantages of Docker:
+
+i)Cost Savings: Especially for large componies The solution. 
+ii)Rapid Development: Even without worrying about the cost to bring it up 
+iii)Security: It makes sure that apps that are running on containers are completely isolated from each other.
+
+Limitations in Docker:
+1)Missing features: There are tons of features that are under progress, like self-inspects & many more. 
+2)Data in the container:There are times when container goes down, so after that, it needs a backup   and recovery strategy. 
+3) Provide cross platform compatibility: One major issue is if an application is designed, to run in docker container on windows, then it can't run in Linux or vice-versa.
+
+To deploy a docker container:
+Run the following commmand in commmand prompt/powershell
+docker run -d -p 80:80 docker/getting-started
