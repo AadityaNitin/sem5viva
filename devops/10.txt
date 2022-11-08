@@ -1,0 +1,43 @@
+Puppet is an open source DevOps system management
+
+It is used to centralized & automate the configuration management procedure. This tool is developed using Ruby DSL(Domain-specific Language)
+
+Puppet tool deploys, configures, & manages servers
+
+With the help of the automation, puppet enables system administrations to operate easier & faster.
+
+Puppet implements infrastructure as a code, which means that you can test the environment for accurate deployment
+
+Puppet uses the client-server paradigm, where one system in any cluster works as the servers, called the puppet master & works a client on nodes called a slave.
+ 
+Features of Puppet.
+
+1) Platform Support:
+Puppet is compatible with all platforms the support Ruby, like Microsoft Windows.
+
+2) Scalable:
+The puppet was developed in 2006, therefore many different organization, including medium & large have deployed puppet & hence it has a large scalability.
+
+3) Document:
+Puppet provides a large number of well-developed wiki Pages with detailed documentations.
+
+4)Idempotency:
+After deploying a configuration on any machine, the puppet keeps verifying those configurations in certain intervals.
+
+5) Open Source:
+A puppet is an open-source tools, because of this feature, it is easy to extend it to build customer libraries & modules. 
+
+6)Reporting Complience:
+It provides you realtime visibility in to the effects of changes, which allows you to see whats going on your infrastructure
+
+7)Cost Effective:
+What have You many number of systems & want to make some minor changes the puppet helps to reduce the effort & cost.
+
+8)Faster:
+Puppet allows Devops professionals & system admins to work more quickly & effectively.
+
+
+Advantages of Puppet: 
+1.Elimination time-consuming, complex & stressfed manual configurations of the infrastructure.
+2. Automates the process of configurations, controlling and manages large numbers of servers & other infrastructure. 
+3. Eliminates complex error-prone tasks of automating the infrastructure deployment & configuration. 4. It is inexpensive method of solving the configuration bottlenecks & latency in the speed.
