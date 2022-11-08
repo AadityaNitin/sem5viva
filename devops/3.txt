@@ -1,0 +1,34 @@
+Basic git commands:
+1. git init - This command is used to initialise a git repository in the directory. 
+Syntax git init [repository name ]
+
+2. git commit - This command records or snapshots files permanantely in the version history. 
+Syntax: git commit -m "<message>"
+
+3. git config - This command sets the author name & email address respectively to be used with your commits 
+Syntax: 
+set your name:
+git config --global user.name "FIRST_NAME LAST_NAME"
+Set your email address:
+git config --global user.email "MY_NAME@example.com"
+
+4. git status - This command lists all the files that have to be commited. 
+Syntax: git status.
+
+5. git clone - This command is wed to obtain a repository from an existing URL. 
+Syntax: git clone [URL]
+
+6. git add-This command adds a file to the staging area. 
+Syntax: git add <filename>
+        git add . (to  add all the files that are updated)
+
+7. git diff - This command shows the file differences which are not yet staged. 
+Syntax: git diff -staged.
+
+8. git um - This command deletes the file from working directory & stages the deletion 
+Syntax: git um [file]
+
+9. git log- This command is used to list the version history for the current branch. 
+Syntax: git log follow [file]
+
+10)git branch-This command lists all the local branches in the current repository
