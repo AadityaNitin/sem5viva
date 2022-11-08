@@ -1,0 +1,16 @@
+Java program using Jenkins
+
+hello.java:
+public class hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+
+steps:
+1)Create a new item
+2)Select freestyle project and give a name to it
+3)Add build steps(Windows batch commands):
+javac hello.java
+java hello 
+4)Click on build now, output will be logged into the console.
