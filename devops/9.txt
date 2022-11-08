@@ -61,5 +61,5 @@ sudo systemctl enable nagios
 sudo systemctl start nagios.
 
 Step 9: Get to know web interface, 
-Go to https://ip_add /nagios/ 
+Go to https://ip_add/nagios/ 
 Enter username password.
