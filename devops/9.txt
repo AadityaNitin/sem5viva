@@ -1,0 +1,65 @@
+Installation of NagiOS and monitoring localhost
+
+Nagios is an open Source monitoring system for computer systems. It was designed to run on the Linux operating system & can monitor devices running Linux, Windows & Unix OS. Nagios software runs periodic checks on critical Server parameters of application, network & resources. It is originally called NetSaint & developed by Ethan Galstad.
+
+• How does Nagi OS work? 
+Nagios bascically collects the statistics of your server either using agent NRPE, check_mk or via SNMP & send alert to you if the value of the metric is above some predefined threshold. Nagios after every interval checks the status of remote service executing a plugin, that will be placed on the remote client
+
+•Nagios Architecture 
+Nagi Os has server-agent architecture.
+Nagios server is installed on the host & plugins are installed on the remote hosts/servers which are to be monitored. Nagios sends the plugins a signal through a process scheduler to run the plugins on local/remote hosts/servers. Plugins collect the data & sends it back to schedular. Then the process schedules sends the notifications to the admins & updades Nagios GUI.
+
+Installation:
+•Nagios installation commands 
+Step 1: Check for updates.
+sudo apt update && update.
+
+Step 2: Create user account
+sudo useradd nagios
+sudo gropuadd nagcmd
+sudo usermod -a -G nagcmd nagios 
+sudo usermod -a -G nagcmd www-data
+
+Step 3: Download Nagios
+cd /tmp 
+wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.5.tar.gz 
+Extract files
+tar -zxvf /tmp/nagios-4.4.5.tar.gz
+cd /tmp/nagios-4.4.5/ 
+
+Step 4: Compile Nagios with Ubuntu 20.04 
+sudo ./configure --with-nagios-group=nagios.
+sudo ./configure --with-command-group=nagcmd --with-httpd_conf =/etc/apache2/sites/enabled/
+sudo make all
+sudo make install
+sudo make install-init
+sudo make install-config 
+sudo make install-commandmode
+
+Step 5: Update your email address
+sudo gedit /usr/local/nagios/etc/objects/contacts.cfg
+
+Step 6: Fixeup the web interface installer. 
+sudo make install-webconf 
+For user account type following interactive shell
+cd /tmp/nagios
+cd /tmp/nagios-4.4.5 
+sudo htpasswd -c /usr/local/nagios/htpasswd.users
+sudo a2enmod cgi
+sudo systemctl restart apache2
+
+Step7: Install nagios plugins. 
+wget https://nagios-plugins.org/download/nagios-plugins-2.3.3.tar.gz
+Extract files & place in directory.
+sudo tar -zxvf /tmp/nagios-plugins-2.3.3.tar.gz
+sudo ./configure --with-nagios-user=nagios --with-nagios-group=nagios
+sudo make install.
+
+Step 8: Using Nagios on Ubuntu.
+sudo /usr/local/nagios/bin/nagios-v 
+sudo systemctl enable nagios
+sudo systemctl start nagios.
+
+Step 9: Get to know web interface, 
+Go to https://ip_add /nagios/ 
+Enter username password.
