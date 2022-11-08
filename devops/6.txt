@@ -1,0 +1,28 @@
+Building pipeline using Jenkins
+
+Jenkins pipeline is suite of plugins which supports implementing & integrating continous delivery pipelines into Jenkins.
+
+A continous Delivery (CD) pipeline is an automated expression of your process for getting software from version control right through to your user and customers. Every changes to Software goes through a complex on its way to being released.
+
+Script:
+
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo 'Build stage done'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'Test stage done'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'Deploy stage done'
+            }
+        }
+    }
+}
