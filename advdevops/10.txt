@@ -1,0 +1,29 @@
+Aim- To see Nagios demo
+What is Nagios and how it works?
+Nagios is an open source monitoring system for computer systems. ... Nagios software runs periodic checks on critical parameters of application, network and server resources. For example, Nagios can monitor memory usage, disk usage, microprocessor load, the number of currently running processes and log files.
+
+Steps-
+Go to google.com, Search NagiOs Demo
+
+Click on the first link shown below
+(exchange.nagios.org) 
+
+Now click on the website-
+ 
+Now click on login as administrator
+ 
+It will have interface like this
+ 
+
+Now click on Host status-
+ 
+In the above image one can see Host Status Summary and Service Status Summary also how many host are up, down and also errors in detail
+Now click on Host Group Status.
+ 
+
+Here we can see Status Summary For All Host Groups
+
+Now we click on BBMap
+In this we can see status of following stuff in each host-
+
+Now we have Network status map which is graphical representation of the network status
