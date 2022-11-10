@@ -1,0 +1,12 @@
+To create a Cloud9 Environment
+Theory:
+Cloud9 IDE is an Online IDE, published as open source from version 2.0, until version 3.0. It supports multiple programming languages, including C, C++, PHP, Ruby, Perl, Python, JavaScript with Node.js, and Go. It is written almost entirely in JavaScript, and uses Node.js on the back-end. 
+Steps:
+LOG IN TO YOUR AWS ACCOUNT, 
+SEARCH FOR CLOUD 9 IN THE SEARCH BAR 
+CLICK ON CREATE ENVIRONMNET, 
+NAME THE ENVIRONMNET 
+Now click on next step. 
+Again, click on Next Step, 
+Now click on Create Environment. 
+Now select any coding language and perform any operation via a code. 
