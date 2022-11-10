@@ -1,0 +1,9 @@
+To create a Docker image 
+Go to terraform script in C Drive , create a folder docker in it  then open in command line
+Crate a .tf file with name docker.tf
+To the same path, type the following commands- 
+terraform init
+terraform plan
+terraform apply
+docker images
+terraform destroy
