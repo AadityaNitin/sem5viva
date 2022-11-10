@@ -1,0 +1,44 @@
+Installation of terraform
+Theory:
+Terraform is an infrastructure as code (IaC) tool that allows you to build, change, and version infrastructure safely and efficiently.
+Steps:
+Google Search – Terraform DOWNLOAD
+Create a Folder in Your C drive Named AdvDevops
+Then Extract The downloaded file in The C drive Folder Named AdvDevops Shown Below
+Till the time ,Open And Login to your AWS console-
+And search IAM and click on it
+Now click on Add Users in The User Section 
+Now give any name For username And Check The Programmatic Access field 
+Add Group name and Check the first Policy Name 
+Don’t add tags
+Now Download .csv file 
+Go to services and Ec2
+google search creating ec2 instances using terraform
+Created a folder Name Terraform Scripts in the C drive where the AdvDevops folder was created also paste terraform .exe in here basically AdvDevOps>Terraform Scripts>terraform.exe and test.tf
+Now Go to note pad And Type the below Details properly But before It Just Change the ACCESS KEY AND SECRECT KEY TO THE ONE IN YOUR  .csv File .  
+Set region same as below if you want MUMBAI as your region.
+Details to be typed are:
+provider "aws" {
+access_key="AKIAXRDN4A4EKCU7RFAA"
+secret_key="vcomKewNNyC2y78pZCpPXyWnoXQo92XPIM7N50Ck"
+region="us-east-2
+}
+
+resource "aws_instance" "Ubuntu" {
+ami="ami-097a2df4ac947655f"
+instance_type="t2.micro"
+}
+save the file as test.tf
+Now search EDIT THE SYSTEM ENVIRONMENT VARIABLES in your windows search. 
+Open it 
+Now click on PATH OF USER VARIBLES, then click on Edit option 
+Now go to edit and then add new path C:\AdvDevops\Terraform Scripts
+Repeat same procedure for system variables.
+Now Open Command Prompt and then pate the path of Terraform script
+Eg. CD C:\Terraform Script
+Now type terraform init command
+Then if there are no errors type terraform plan as shown below (type YES when command prompt ask)
+Now Finally Type terraform apply
+Now go to EC2 and check that is an instance created by the name of UBUNTU and is it in running status or not If it is in Running Status then Come back to Command prompt And Terminate the Instance by typing terraform destroy
+Now go back to EC2 if the instance is terminated, if yes then logout of the Aws Console.
+And close the command prompt! 
