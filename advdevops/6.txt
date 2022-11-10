@@ -1,0 +1,81 @@
+
+SonarQube and Sonar Scanner
+
+
+Download SonarQube and Sonar Scanner
+
+
+
+After downloading, set Environment Variables. Add “sonarqube-9.1.0.47736\bin” to Path. 
+Open command prompt. Run commands:
+●	cd “sonarqube-9.1.0.47736\bin\windows-x86-64”
+●	StartSonar.bat
+ 
+
+ 
+Open another command prompt. Run command:
+●	cd “sonar-scanner-4.6.2.2472-windows\bin”
+●	sonar-scanner
+
+
+Server up and running on localhost:9000
+Login using credentials as User: admin and Password: admin and Set a new password
+ 
+ 
+
+Click on Create a project Manually.
+
+
+Give any Project display name. 
+ 
+
+Click on Locally.
+
+
+
+Give any name to token and click on Generate. 
+ 
+
+Click on Continue.
+
+
+
+
+
+
+
+
+Save a Python program in a folder. class Solution(object):
+def romanToInt(self, s): 
+roman =
+{'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000,'IV':4,'IX':9,'XL':40,'XC':90,'CD':400,'CM':900}
+i = 0 num = " "
+while i < len(s):
+if i+1<len(s) and s[i:i+2] in roman:
+num+=roman[s[i:i+2]] i+=2
+else:
+#print(i) num+=roman[s[i]] i+=1
+return num ob1 = Solution()
+print(ob1.romanToInt("III")) print(ob1.romanToInt("CDXLIII"))
+
+Open command prompt in this folder and Run program using copied command. “sonar-scanner.bat -D"sonar.projectKey=sonarPythonProgram1" -D"sonar.sources=." -
+D"sonar.host.url=http://localhost:9000" -D"sonar.login=41740dddf269d68dfda1ec55f28cd250be46d48f"
+ 
+ 
+
+
+Given below is the inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+Press “Ctrl + C” to stop the server. 
+ 
