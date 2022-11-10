@@ -19,8 +19,8 @@ Now Go to note pad And Type the below Details properly But before It Just Change
 Set region same as below if you want MUMBAI as your region.
 Details to be typed are:
 provider "aws" {
-access_key="AKIAXRDN4A4EKCU7RFAA"
-secret_key="vcomKewNNyC2y78pZCpPXyWnoXQo92XPIM7N50Ck"
+access_key="access key from csv"
+secret_key="secret key from csv"
 region="us-east-2
 }
 
