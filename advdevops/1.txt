@@ -1,0 +1,21 @@
+To make a EC2 Machine in AWS 
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. 
+
+Steps:
+LOGIN TO AWS ACCOUNT
+THEN SEACH EC2. 
+NOW CLICK ON LAUNCH CREATE NEW INSTANCES
+Choose any machine you want to create here I am creating UBUNTU(free tier). 
+Click on T2 micro (free tier one) 
+Click on NEXT, then Again Click Next. 
+THEN CREATE A KEY PAIR BY ANY NAME AND DOWNLOAD IT. THEN CLICK NEXT 
+Now add security group  ALL TRAFFIC ,  
+PROTOCOL – ALL, 
+SOURCE- ANYWHERE. 
+NOW WAIT TILL THE STATUS CHECK IS 2/2 and Instance is running. 
+Once Check is complete click on launch instances. 
+FOLLOW SOME BASIC LINUX COMMANDS AS SHOWN BELOW:
+eg:
+ping
+traceroute
+whois
