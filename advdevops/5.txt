@@ -1,0 +1,19 @@
+To implement lamda Function.
+Login to Aws account-
+Search S3 ,click on the option below shown-
+Create an S3 bucket by giving it a name
+Click on upload button after the s3 bucket is created in the object section 
+Add any .py or .java extenstion file and click on upload 
+Now search Lamda 
+Click create function
+Click on use a blueprint in first section and get s3 objet in second section and click on configure
+Select the bucket created and create trigger ,click on create function-
+Check the given trigger is created 
+Click on the orange test button-
+Now,
+Check the logs of the test-
+Now terminate-
+Click on delete function.
+Empty bucket
+Delete bucket
+ 
