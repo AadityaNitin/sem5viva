@@ -1,0 +1,31 @@
+Aim- to install NagiOS on Linux
+Login to Aws 
+Create Ec2 instances on Aws account of any linux os 
+Then Run the following command in SS
+cd /usr/src/
+sudo wget https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.2.tar.gz
+sudo tar zxf nagios-*.tar.gz
+cd nagioscore-nagios-*/
+ 
+Now finally run the following command 
+
+sudo ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+
+if error comes install c compiler on the linux
+by following this link
+https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/
+
+Now let us install plugins by
+sudo wget -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.g
+
+then
+
+sudo tar zxf nagios-plugins.tar.gz
+
+then
+
+cd nagios-plugins-release-2.2.1
+finally start and then check status of nagi os
+
+sudo systemctl start nagios
+sudo systemctl status nagios
