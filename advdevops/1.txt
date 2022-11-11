@@ -19,3 +19,7 @@ eg:
 ping
 traceroute
 whois
+step to install programming languages:
+to install java: sudo apt-get install default-jdk
+to install python: sudo apt-get install python3
+to install c: sudo apt-get install gcc
