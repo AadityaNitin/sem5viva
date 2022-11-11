@@ -27,7 +27,10 @@ region="us-east-2
 resource "aws_instance" "Ubuntu" {
 ami="ami-097a2df4ac947655f"
 instance_type="t2.micro"
+vpc_security_group_ids = ["security group id"]
 }
+
+security group id can be generated using ec2 dashboard>security group>create group>rules>All traffic>port=0.0.0.0/0
 save the file as test.tf
 Now search EDIT THE SYSTEM ENVIRONMENT VARIABLES in your windows search. 
 Open it 
